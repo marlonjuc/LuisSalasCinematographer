@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Visit http://www.menucool.com/horizontal/javascript-menu for source code and other menu CSS templates */
+
+#menu
+{
+    background-color: #000000;
+    height: 50px;
+    clear:both;
+    text-align:center;/*For IE5 or IE No DOCTYPE*/
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+        
+#items
+{
+    margin: 0 auto;/*If you don't want the menu center aligned, remove this line and above text-align:center*/
+    border-left:solid 1px #0AE;
+}
+        
+#items ul
+{
+    font-family:'jeanlucbold', Arial, sans-serif;
+    list-style-type: none;
+    float:left;
+    padding:0;margin:0;
+	/*font-size:14px;*/
+}
+        
+#items li
+{
+    /*background: url('../img/menu_bg_big.png');*/
+    line-height: 50px;
+    position: relative;
+    overflow: hidden;/*used to hide slip*/
+    z-index: 0;
+    float:left;
+    list-style-type: none;
+    padding:0;margin:0;
+    border-right:solid 1px #CCCCCC;
+	letter-spacing:2px;
+}
+        
+#items li.current, #items .slip
+{
+    background: #606060;
+}
+        
+#items li a
+{
+    text-align: center;
+    text-decoration: none;
+    padding: 0 30px;/*30px is used to adjust the distance between each menu item. Now the distance is 30+30=60px.*/
+    /*width: 100px;*/ /*If you prefer a fixed width, uncomment this line and comment out above line*/
+    color: white;
+    display: block;
+    z-index: 2;
+    white-space:nowrap;
+}
+        
+#items li.current a
+{
+    color: white;
+}
+        
+#items .slip
+{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+#language
+{
+    background-color: #000000;
+    height: 30px;
+    text-align:left;/*For IE5 or IE No DOCTYPE*/
+	font-size:12px;
+    font-family:'jeanlucthin', Arial, sans-serif;
+	letter-spacing:1px;
+	color: #CCCCCC;
+	float:left;
+	position: relative;
+	margin-top:10px;
+	margin-left:10px;
+	cursor: pointer; 
+}
+
+
+/**
+* Responsive Design
+*
+* The iPhone 4 display is 320 by 480 points in size total. 
+* The status bar is 20 points high, 
+* and the tool bar at the bottom in 44 points high.
+*
+**/
+
+@media screen and (max-width: 450px) {
+	
+#language{
+	height: 10px;
+	margin-top:4px;
+	margin-left:4px;
+	font-size:8px;
+}
+
+#menu
+{
+	width:100%;
+    height: 20px;
+}
+
+#items
+{
+    margin: 0 auto;
+}
+
+#items li
+{
+	width:78px;
+	letter-spacing:1px;
+}
+
+#items li a
+{
+    padding: 0 10px;/*30px is used to adjust the distance between each menu item. Now the distance is 30+30=60px.*/
+}
+
+}
+

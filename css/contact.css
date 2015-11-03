@@ -1,0 +1,218 @@
+
+body {
+	height:700px;
+}
+
+.container {
+	width:804px;
+	float:left;
+}
+
+/*contact form*/
+#form {
+	width:804px;
+    position: relative; 
+    margin: 0 auto;
+    text-align:center;
+}
+
+/*CSS for Error notification*/
+.notification_error{
+    border: 1px solid #CCCCCC;
+    height: auto;color: #000000;
+    padding: 10px;
+    margin: 10px auto;
+    text-align:left;
+    -moz-border-radius:5px;
+    margin-bottom:10px;}
+
+/*CSS for Successfully sent notification*/
+.notification_ok{
+    border: 1px #606060 solid;
+    height: auto;padding: 10px;
+    margin:0 auto;
+    background: #CCCCCC;
+    text-align: center;-moz-border-radius:
+    5px;margin-bottom:10px;}
+
+/*CSS for textarea (Name and email)*/
+textarea{
+    width:400px;margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    color: #333333;
+	font-size:12px;
+   	font-family: "static", arial;
+    -moz-border-radius: 3px;
+        -webkit-appearance: textfield;
+            -webkit-box-sizing: content-box;
+    -moz-box-sizing : content-box;
+        box-sizing : content-box;
+            -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+        border-radius: 3px;
+            -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+            webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;}
+
+/*CSS for textbox (Message)*/       
+.textbox {
+    width:400px;height:25px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    color: #333333;
+    font-size:12px;
+   	font-family: "static", arial;
+    -moz-border-radius: 3px;
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+      -moz-box-sizing : content-box;
+           box-sizing : content-box;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6);
+       -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6);
+            box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6);
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;}
+.textbox2 {height:140px;}
+
+/*CSS for submit button*/       
+.button {
+	width: 25%;
+    cursor: pointer;    
+    background: #606060;
+    padding: 4px 5px;
+   	font-family:'jeanlucbold', Arial, sans-serif;
+    color: #fff;
+	letter-spacing:1px;
+    font-size: 16px;    
+    border: 1px solid #000000;    
+    margin-bottom: 10px;    
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px; 
+    -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+            0px 0px 0px 3px rgb(254, 254, 254),
+            0px 5px 3px 3px rgb(210, 210, 210);
+       -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+            0px 0px 0px 3px rgb(254, 254, 254),
+            0px 5px 3px 3px rgb(210, 210, 210);
+            box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+            0px 0px 0px 3px rgb(254, 254, 254),
+            0px 5px 3px 3px rgb(210, 210, 210);
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            text-align:center;}
+            
+.button:hover{
+    background: #CCCCCC;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  { 
+    color: rgb(190, 188, 188); 
+    font-style: italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{ 
+    color: rgb(190, 188, 188);
+    font-style: italic;
+} 
+input {
+  outline: none;
+}
+
+.data{
+  	color: #606060;
+	font-size:14px;
+   	font-family: "static", arial;
+}
+
+.data a{
+  	color: #606060;
+	font-size:14px;
+   	font-family: "static", arial;
+}
+
+.data a:link{
+  text-decoration:  none;
+} 
+  
+.data a:visited {
+} 
+
+.data a:hover{
+  text-decoration:  underline;
+} 
+
+.data p{
+	line-height:2px;
+}
+
+.data bold{
+   	font-family: "static", arial;
+	font-weight:bold;
+}
+
+#map_canvas{
+    position:relative;
+    float:left;
+    width: 100%;
+    height: 500px;
+}
+
+/**
+* Responsive Design
+*
+* The iPhone 4 display is 320 by 480 points in size total. 
+* The status bar is 20 points high, 
+* and the tool bar at the bottom in 44 points high.
+*
+**/
+
+@media screen and (max-width: 450px) {
+
+body
+{
+	height:600px;
+}
+
+.container {
+	float:left;
+	width:320px;
+}
+
+#form { 
+    width: 300px;
+}
+
+textarea{
+    width:200px;margin: 10px auto;
+    padding: 5px;
+}
+
+/*CSS for textbox (Message)*/       
+.textbox {
+    width:200px;height:15px;
+    margin: 5px auto;
+    padding: 5px;
+	}
+.textbox2 {height:70px;}
+
+}
+
+
+

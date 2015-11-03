@@ -1,0 +1,58 @@
+body {
+	height:500px;
+}
+
+#wrapper{
+	margin-bottom:85px;
+}
+
+.container{
+	text-align:center;
+	width:100%;
+}
+
+.container a{
+  	color: #606060;
+	font-size:14px;
+   	font-family: "static", arial;
+}
+
+.container a:link{
+  text-decoration:  none;
+} 
+  
+.container a:visited {
+} 
+
+.container a:hover{
+  text-decoration:  underline;
+} 
+
+.container p{
+	line-height:2px;
+}
+
+.container bold{
+   	font-family: "static-bold", arial;
+}
+
+/**
+* Responsive Design
+*
+* The iPhone 4 display is 320 by 480 points in size total. 
+* The status bar is 20 points high, 
+* and the tool bar at the bottom in 44 points high.
+*
+**/
+
+@media screen and (max-width: 450px) {
+	
+.container a
+{
+	font-size:85%;
+}
+
+}
+
+
+

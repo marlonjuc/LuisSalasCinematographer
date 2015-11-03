@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*font face*/
+@font-face {
+    font-family: 'jeanlucthin';
+    src: url('../fonts/jeanlucweb-thin.eot');
+    src: url('../fonts/jeanlucweb-thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jeanlucweb-thin.woff') format('woff'),
+		 url('../fonts/jeanlucweb-thin.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'jeanlucbold';
+    src: url('../fonts/jeanlucweb-bold.eot');
+    src: url('../fonts/jeanlucweb-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jeanlucweb-bold.woff') format('woff'),
+		 url('../fonts/jeanlucweb-bold.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Bookman Old Style Famuly*/
+@font-face {
+    font-family: 'bookos-reg';
+    src: url('../fonts/bookos-reg.eot');
+    src: url('../fonts/bookos-reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bookos-reg.woff') format('woff'),
+         url('../fonts/bookos-reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bookos-bold';
+    src: url('../fonts/bookos-bold.eot');
+    src: url('../fonts/bookos-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bookos-bold.woff') format('woff'),
+         url('../fonts/bookos-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bookos-reg';
+    src: url('../fonts/bookos-italic.eot');
+    src: url('../fonts/bookos-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bookos-italic.woff') format('woff'),
+         url('../fonts/bookos-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'static';
+    src: url('../fonts/new/static.eot');
+    src: url('../fonts/new/static.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/new/static.woff') format('woff'),
+         url('../fonts/new/static.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'zaguatica';
+    src: url('../fonts/new/zaguatica-ExtraBold.eot');
+    src: url('../fonts/new/zaguatica-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/new/zaguatica-ExtraBold.woff') format('woff'),
+         url('../fonts/new/zaguatica-ExtraBold.ttf') format('truetype');
+    font-weight:bold;
+    font-style:normal;
+
+}
+
+@font-face {
+    font-family: 'inline';
+    src: url('../fonts/new/Intro Inline.eot');
+    src: url('../fonts/new/Intro Inline.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/new/Intro Inline.woff') format('woff'),
+         url('../fonts/new/Intro Inline.ttf') format('truetype');
+    font-weight:bold;
+    font-style:normal;
+
+}
+
+
+body {
+    background: #000000;
+    color: #606060;
+    font-size: 14px;
+    font-family: "static", arial;
+    line-height: 1.4;
+	height:600px;
+}
+
+#wrapper{
+    margin: 40px auto 60px;
+    width: 970px;
+    padding: 22px 28px 20px 0;
+    overflow: hidden;
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),  0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),  0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),  0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.container {
+    float: left;
+	margin-left:20px;
+	margin-bottom:0px;
+	width:100%;
+}
+
+
+h1{
+	color: #FFFFFF;
+	font-size:24px;
+	text-align:left;
+	position:relative; top:10px; left:10px;
+	font-family:'jeanlucbold', Arial, sans-serif;
+    letter-spacing:1.5px;
+    width:100%;
+    height:30px;
+	float:left;
+	margin-bottom:35px;
+}
+
+h1 .highlight{
+	color: #CCCCCC;
+}
+
+.profile{
+	width:960px;
+	height:640px;
+	background: url('../img/moon.jpg') no-repeat; overflow: visible;
+	float:left;
+	margin-left:20px;
+}
+
+.footer {
+   position:fixed;
+   bottom:0;
+   float:left;
+   width:100%;
+   height:30px;
+   background:#000000;
+   font-size:14px;
+   text-align:center;
+   font-family:'jeanlucbold', Arial, sans-serif;
+   letter-spacing:1.5px;
+}
+
+separator {
+   position:fixed;
+   bottom:30px;
+   left:10%;
+   float:left;
+   width:80%;
+   height:3px;
+   background:#CCCCCC;
+}
+
+.superscript {
+    vertical-align: super;
+    font-size:7px;
+}
+
+
+/**
+* Responsive Design
+*
+* The iPhone 4 display is 320 by 480 points in size total. 
+* The status bar is 20 points high, 
+* and the tool bar at the bottom in 44 points high.
+*
+**/
+
+@media screen and (max-width: 450px) {
+body
+{
+	font-size:65%;
+	max-height:100%;
+}
+
+#wrapper { 
+    margin: 0px auto 10px;
+    width: 320px;
+    padding: 10px 10px 10px 10px;
+}
+
+p, pre {
+    margin: 1em;
+}
+
+.container {
+	width:auto;
+	margin-left:0px;
+	float:none;
+}
+
+.profile{
+	width:300px;
+	height:200px;
+	background: url('../img/moon_mobile.jpg') no-repeat; overflow: visible;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:20px;
+}
+
+h1{
+	font-size:16px;
+}
+
+.footer {
+   font-size:10px;
+}
+
+}
+
