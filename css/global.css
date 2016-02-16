@@ -105,9 +105,9 @@ body {
 }
 
 #wrapper{
-    margin: 40px auto 60px;
-    width: 970px;
-    padding: 22px 28px 20px 0;
+    margin: 0 auto;
+    width: 1140px;
+    padding: 22px;
     overflow: hidden;
 	background: #FFFFFF;
 	border: 1px solid #CCCCCC;

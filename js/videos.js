@@ -17,7 +17,7 @@ var lessBtn = "Show less";
 $(document).ready(function() {
 	$.getScript(apiEndpoint + vimeoUsername + '/albums.json?callback=' + albumsCallback);
 	$.getScript(apiEndpoint + vimeoUsername + '/info.json?callback=' + profileCallback);
-	
+
 	if(getPageName(window.location.pathname).indexOf("-es") >= 0){
 		moreBtn = "+ Mas";
 		lessBtn = "- Menos";
@@ -25,12 +25,12 @@ $(document).ready(function() {
 		moreBtn = "Show more";
 		lessBtn = "Show less";
 	}
-	
+
 	if(jQuery.browser.mobile)
 	{
 		//addScroller();
 	}
-	
+
 	//var pageName = getPageName(window.location.pathname);
 	//language = pageName.indexOf("-es");
 });
@@ -66,7 +66,7 @@ function getVideo(url) {
 	{
 		$.getScript(oEmbedEndpoint + '?url=' + url + '&width=320&height=240&callback=' + oEmbedCallback);
 	}else{
-    	$.getScript(oEmbedEndpoint + '?url=' + url + '&width=504&height=280&callback=' + oEmbedCallback);
+    	$.getScript(oEmbedEndpoint + '?url=' + url + '&width=800&height=600&callback=' + oEmbedCallback);
 	}
 }
 
@@ -84,7 +84,7 @@ function setupGallery(videos) {
 		}
         $('#thumbs ul').append(html);
     }
-	
+
 	getVideo(videos[0].url);
 
     // Switch to the video when a thumbnail is clicked
@@ -94,7 +94,7 @@ function setupGallery(videos) {
         return false;
     });
    addExpander();
-   
+
 }
 
 function switchVideo(video) {
@@ -110,18 +110,18 @@ $(".show-more a").on("click", function() {
     var $link = $(this);
     var $content = $link.parent().prev("div.text-content");
     var linkText = $link.text();
-    
+
     $content.toggleClass("short-text, full-text");
 
     $link.text(getShowLinkText(linkText));
-    
+
     return false;
 });
 }
 
 function getShowLinkText(currentText){
   var newText = '';
-    
+
     if(currentText.toUpperCase() === "SHOW MORE") {
         newText = "Show less";
     }
@@ -133,9 +133,9 @@ function getShowLinkText(currentText){
     }
 	if(currentText.toUpperCase() === "- MENOS") {
         newText = "+ Mas";
-    } 
-    
-    return newText;  
+    }
+
+    return newText;
 }
 
 
@@ -146,21 +146,21 @@ function addScroller(){
 		manualContinuousScrolling: true,
 		hotSpotScrolling: false,
 		mousewheelScrolling: false
-	});	
+	});
 }
 
 function orderElements(){
 	 /*var footer = $('.footer');
 	 var separator = $('separator');
-	 
+
 	 var w = ( $(window).width() - footer.width() ) / 2;
 	 footer.css('left', w);
 	 footer.css('display', 'block');
 		$(window).scroll(function(){
 		//alert( $(window).height() );
 		 footer.css('bottom', 200);
-		});	
-		
+		});
+
 	w = ( $(window).width() - separator.width() ) / 2;
 	separator.css('left', w);
 	alert(separator.css('left'));

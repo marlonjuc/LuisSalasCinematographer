@@ -3,30 +3,31 @@ body {
 }
 
 .container {
-	width:850px;
+	width:1102px;
 	float:none;
 }
 
-#thumbs { 
-	overflow: auto; 
-	height: 278px; 
-	width: 300px; 
-	border: 1px solid #E7E7DE; 
-	padding: 0; 
-	float: left; 
+#thumbs {
+	overflow: auto;
+	height: 600px;
+	width: 300px;
+	border: 1px solid #E7E7DE;
+	padding: 0;
+	float: left;
 	position:relative;
 }
 
-#thumbs ul { 
-	list-style-type: none; 
+#thumbs ul {
+	list-style-type: none;
 	float: left;
 	font-size:12px;
-  	font-family: "static", arial;
+	font-family: "static", arial;
+	padding:0;
+	padding-left:40px;
 }
 
 #thumbs ul li{
 	margin-bottom:10px;
-	margin-left:-30px;
 }
 
 #thumbs ul li a:first-child{
@@ -41,30 +42,30 @@ body {
 	width:275px;
 }
 
-.thumb { 
-	border: 0; 
-	float: left; 
-	width: 100px; 
-	height: 75px; 
-	background: url(http://a.vimeocdn.com/thumbnails/defaults/default.75x100.jpg); 
-	margin-right: 10px; 
+.thumb {
+	border: 0;
+	float: left;
+	width: 100px;
+	height: 75px;
+	background: url(http://a.vimeocdn.com/thumbnails/defaults/default.75x100.jpg);
+	margin-right: 10px;
 }
 
-#embed { 
-	background-color: #E7E7DE; 
-	width: 504px; 
-	height: 280px; 
+#embed {
+	background-color: #E7E7DE;
+	width: 800px;
+	height: 600px;
 	float: left;
 }
 
-#portrait { 
-	float: left; 
-	margin-right: 5px; 
-	max-width: 100px; 
+#portrait {
+	float: left;
+	margin-right: 5px;
+	max-width: 100px;
 }
 
-#stats { 
-	margin-bottom: 20px; 
+#stats {
+	margin-bottom: 20px;
 }
 
 #stats img{
@@ -97,7 +98,7 @@ body {
 
 div.text-container {
     margin: 0 auto;
-    width: 75%;    
+    width: 75%;
 }
 
 .text-content{
@@ -151,8 +152,8 @@ line{
 /**
 * Responsive Design
 *
-* The iPhone 4 display is 320 by 480 points in size total. 
-* The status bar is 20 points high, 
+* The iPhone 4 display is 320 by 480 points in size total.
+* The status bar is 20 points high,
 * and the tool bar at the bottom in 44 points high.
 *
 **/
@@ -169,16 +170,21 @@ body
 	width:320px;
 }
 
-#embed { 
-	width: 320px; 
-	height: 240px; 
+.content{
+	width:80%;
 }
 
-#thumbs { 
+#embed {
+	width: 320px;
+	height: 240px;
+}
+
+#thumbs {
     width:100%;
 	/*height:auto;*/
 	overflow: auto;
 	-webkit-overflow-scrolling:touch;
+	height:278px;
 }
 
 .category{
