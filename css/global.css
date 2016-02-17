@@ -162,6 +162,7 @@ h1 .highlight{
    text-align:center;
    font-family:'jeanlucbold', Arial, sans-serif;
    letter-spacing:1.5px;
+   line-height:30px;
 }
 
 separator {
@@ -233,7 +234,6 @@ separator {
 body
 {
 	font-size:65%;
-	max-height:100%;
 }
 
 #wrapper {
