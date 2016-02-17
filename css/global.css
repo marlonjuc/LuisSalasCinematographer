@@ -202,6 +202,19 @@ separator {
   color:#CCCCCC;
 }
 
+/**
+* Responsive Design
+*
+* Tablet smaller than 800px
+*
+**/
+
+@media screen and (max-width: 1140px) {
+  body{
+    background-size: cover;
+  }
+}
+
 
 /**
 * Responsive Design
