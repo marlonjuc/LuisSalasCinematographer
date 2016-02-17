@@ -99,9 +99,8 @@ body {
     font-size: 14px;
     font-family: "static", arial;
     line-height: 1.4;
-	  height:600px;
     background: url('../img/art.jpg') no-repeat;
-    background-size: cover;
+    background-size: cover 100%;
 }
 
 #wrapper{
@@ -130,7 +129,7 @@ body {
 h1{
 	color: #FFFFFF;
 	font-size:24px;
-	text-align:left;
+	text-align:center;
 	position:relative; top:10px; left:10px;
 	font-family:'jeanlucbold', Arial, sans-serif;
     letter-spacing:1.5px;
