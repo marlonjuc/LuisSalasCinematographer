@@ -107,7 +107,7 @@ function setupGallery(videos) {
         return false;
     });
    addExpander();
-	 
+
  	addActiveState($("#thumbs ul li:first-child a"));
 
 }
