@@ -35,6 +35,18 @@
 	font-weight:bold;
 }
 
+#thumbs ul li{
+	margin-bottom:10px;
+}
+
+#thumbs ul li a.active{
+		color:#AAAAAA;
+}
+
+#thumbs ul li a.active img{
+		border: 2px solid #aaaaaa;
+}
+
 #thumbs li p{
 	margin-top:0px;
 	width:275px;
@@ -104,7 +116,7 @@ div.text-container {
 }
 
 .text-content{
-   color:#CCCCCC;
+   color:#606060;
    width:160px;
 }
 

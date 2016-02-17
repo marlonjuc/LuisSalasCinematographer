@@ -77,7 +77,7 @@ function getVideo(url) {
 	{
 		$.getScript(oEmbedEndpoint + '?url=' + url + '&width=320&height=240&callback=' + oEmbedCallback);
 	}else{
-    	$.getScript(oEmbedEndpoint + '?url=' + url + '&width=800&height=600&callback=' + oEmbedCallback);
+    $.getScript(oEmbedEndpoint + '?url=' + url + '&width=800&height=600&callback=' + oEmbedCallback);
 	}
 }
 
@@ -90,7 +90,7 @@ function setupGallery(videos) {
         	var html = '<li><a href="' + videos[i].url + '"><img src="' + videos[i].thumbnail_medium + '" class="thumb" />';
        		html += '<p>' + videos[i].title + '</p></a>' + "<div class='text-content short-text'>" + videos[i].description + "</div><div class='show-more'></br><a href='#'>" + moreBtn + "</a></div><br/><line></line></li>";
 		}else{
-			var html = '<li><a href="' + videos[i].url + '"><img src="' + videos[i].thumbnail_medium + '" class="thumb" />';
+					 var html = '<li><a href="' + videos[i].url + '"><img src="' + videos[i].thumbnail_medium + '" class="thumb" />';
        		 html += '<p>' + videos[i].title + '</p></a>' + "<div>" + videos[i].description + "</div><div class='hidden-link'></br><a href='#'>Separator</a></div><br/><line></line></li>";
 		}
         $('#thumbs ul').append(html);
@@ -102,10 +102,19 @@ function setupGallery(videos) {
     $('#thumbs a').click(function(event) {
         event.preventDefault();
         getVideo(this.href);
+				resetThumbsActive();
+				addActiveState($(this));
         return false;
     });
    addExpander();
+	 
+ 	addActiveState($("#thumbs ul li:first-child a"));
 
+}
+
+function resetThumbsActive()
+{
+	  $('#thumbs a').removeClass("active");
 }
 
 function switchVideo(video) {
