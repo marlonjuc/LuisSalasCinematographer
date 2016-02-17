@@ -62,7 +62,7 @@ function loadAlbum(albumID){
 }
 
 function getVideo(url) {
-	if(jQuery.browser.mobile)
+	if($(window).width() < 840)
 	{
 		$.getScript(oEmbedEndpoint + '?url=' + url + '&width=320&height=240&callback=' + oEmbedCallback);
 	}else{
@@ -75,7 +75,7 @@ function setupGallery(videos) {
 	$("#thumbs ul").empty();
     // Add the videos to the gallery
     for (var i = 0; i < videos.length; i++) {
-		if(videos[i].description.length >= 40){
+		if(videos[i].description.length >= 60){
         	var html = '<li><a href="' + videos[i].url + '"><img src="' + videos[i].thumbnail_medium + '" class="thumb" />';
        		html += '<p>' + videos[i].title + '</p></a>' + "<div class='text-content short-text'>" + videos[i].description + "</div><div class='show-more'></br><a href='#'>" + moreBtn + "</a></div><br/><line></line></li>";
 		}else{

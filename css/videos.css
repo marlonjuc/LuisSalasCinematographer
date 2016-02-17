@@ -191,6 +191,26 @@ line{
 
 }
 
+@media screen and (max-width: 840px) {
+
+	#wrapper{
+    width:100%;
+  }
+	.container{
+		width:100%;
+	}
+
+	#embed{
+		height:240px;
+		width:100%;
+	}
+
+	#thumbs{
+		width:100%;
+	}
+
+}
+
 /**
 * Responsive Design
 *
@@ -229,13 +249,34 @@ body
 	height:278px;
 }
 
+#thumbs ul {
+    width: 92%;
+}
+
+#thumbs li p{
+	width:90%;
+}
+
 .category{
 	margin-bottom:20px;
+	float:left;
 }
 
 .category a{
 	margin-left:10px;
-	font-size:10px;
+	font-size:12px;
+}
+
+.show-more, hidden-link{
+	display:block;
+}
+
+.text-content{
+	width:180px;
+}
+
+.short-text{
+	
 }
 
 #stats h2{

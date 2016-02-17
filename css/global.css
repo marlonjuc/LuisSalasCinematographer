@@ -213,6 +213,10 @@ separator {
   body{
     background-size: cover;
   }
+
+  #wrapper{
+    width:100%;
+  }
 }
 
 
