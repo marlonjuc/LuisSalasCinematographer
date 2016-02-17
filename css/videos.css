@@ -181,6 +181,10 @@ line{
 		width:840px;
 	}
 
+	.content{
+		width:840px;
+	}
+
 	#thumbs{
 		width:800px;
 	}
@@ -212,7 +216,12 @@ line{
 	#wrapper{
     width:100%;
   }
+
 	.container{
+		width:100%;
+	}
+
+	.content{
 		width:100%;
 	}
 
