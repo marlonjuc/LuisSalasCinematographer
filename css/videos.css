@@ -93,6 +93,10 @@
 	float:left;
 }
 
+.category a.active{
+	color:#AAAAAA;
+}
+
 
 div.text-container {
     margin: 0 auto;
@@ -265,7 +269,8 @@ body
 
 .category a{
 	margin-left:10px;
-	font-size:12px;
+	font-size:14px;
+	width:100%;
 }
 
 .show-more, hidden-link{

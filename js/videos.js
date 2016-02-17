@@ -18,13 +18,13 @@ $(document).ready(function() {
 	$.getScript(apiEndpoint + vimeoUsername + '/albums.json?callback=' + albumsCallback);
 	$.getScript(apiEndpoint + vimeoUsername + '/info.json?callback=' + profileCallback);
 
-	if(getPageName(window.location.pathname).indexOf("-es") >= 0){
+	/*if(getPageName(window.location.pathname).indexOf("-es") >= 0){
 		moreBtn = "+ Mas";
 		lessBtn = "- Menos";
-	}else{
+	}else{*/
 		moreBtn = "Show more";
 		lessBtn = "Show less";
-	}
+	//}
 
 	if(jQuery.browser.mobile)
 	{
@@ -49,16 +49,27 @@ function getAlbums(albums) {
 	}
 	createCategoryMenu();
 	loadAlbum(albumsCollection[0].id);
+	addActiveState($(".category a:first-child"));
 }
 
 function createCategoryMenu(){
 	for(var i = 0; i < albumsCollection.length; i++){
-		$('.category').append("<a href='#' onclick='loadAlbum(" + albumsCollection[i].id + "); return false;'>" + albumsCollection[i].title + "</a>");
+		$('.category').append("<a href='#' onclick='loadAlbum(" + albumsCollection[i].id + "); resetActiveStates(); addActiveState($(this)); return false;'>" + albumsCollection[i].title + "</a>");
 	}
 }
 
 function loadAlbum(albumID){
 	$.getScript(apiEndpoint + "album/" + albumID + '/videos.json?callback=' + videosCallback);
+}
+
+function addActiveState(element)
+{
+	element.addClass('active');
+}
+
+function resetActiveStates()
+{
+	$(".category a").removeClass("active");
 }
 
 function getVideo(url) {
